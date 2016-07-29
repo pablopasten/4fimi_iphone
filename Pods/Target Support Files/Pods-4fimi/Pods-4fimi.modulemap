@@ -1,0 +1,6 @@
+framework module Pods_4fimi {
+  umbrella header "Pods-4fimi-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="okP-3e-k1G"/>
+                        <viewControllerLayoutGuide type="bottom" id="OU7-yi-7Hu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iB2-DG-ODV">
+                                <rect key="frame" x="71" y="142" width="199" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="199" id="67t-sr-Hqd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="DMA-mk-7tH"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eUJ-aM-sH5">
+                                <rect key="frame" x="71" y="193" width="199" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="199" id="7ue-xk-EJS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="9E7-tY-lgX"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="IJb-g8-6Og">
+                                <rect key="frame" x="66" y="20" width="209" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="209" id="2rG-Ue-GAP"/>
+                                    <constraint firstAttribute="width" secondItem="IJb-g8-6Og" secondAttribute="height" multiplier="209:105" id="xIf-gX-Yh3"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLr-br-vPm">
+                                <rect key="frame" x="71" y="254" width="199" height="30"/>
+                                <color key="backgroundColor" red="0.090196078430000007" green="0.6588235294" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="199" id="fE7-jg-2i3"/>
+                                </constraints>
+                                <state key="normal" title="Ingresar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fIY-di-9rf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSL-T3-LsE">
+                                <rect key="frame" x="71" y="297" width="199" height="30"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="199" id="EGE-R8-9w3"/>
+                                </constraints>
+                                <state key="normal" title="Crear Usuario">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onCrearUsuario:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r85-Xe-sjU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mh-N1-itd">
+                                <rect key="frame" x="71" y="366" width="199" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="199" id="58z-vN-7Qd"/>
+                                    <constraint firstAttribute="height" constant="30" id="CmV-ck-LPj"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Login-Facebook-¡Conecta-mejor-a-tu-empresa-texto1.png"/>
+                                <connections>
+                                    <action selector="Loginwithfacebookaction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bUt-ZH-rDa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LLr-br-vPm" firstAttribute="top" secondItem="eUJ-aM-sH5" secondAttribute="bottom" constant="31" id="E9K-5N-Bap"/>
+                            <constraint firstItem="eUJ-aM-sH5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FAs-wN-VZp"/>
+                            <constraint firstItem="6mh-N1-itd" firstAttribute="top" secondItem="QSL-T3-LsE" secondAttribute="bottom" constant="39" id="IgE-wa-LwY"/>
+                            <constraint firstItem="eUJ-aM-sH5" firstAttribute="top" secondItem="iB2-DG-ODV" secondAttribute="bottom" constant="21" id="Kfc-Aw-miF"/>
+                            <constraint firstItem="QSL-T3-LsE" firstAttribute="top" secondItem="LLr-br-vPm" secondAttribute="bottom" constant="13" id="Odg-zQ-zgm"/>
+                            <constraint firstItem="QSL-T3-LsE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bUH-Xc-nCJ"/>
+                            <constraint firstItem="IJb-g8-6Og" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cKV-hw-aXz"/>
+                            <constraint firstItem="6mh-N1-itd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hpw-EG-19z"/>
+                            <constraint firstItem="iB2-DG-ODV" firstAttribute="top" secondItem="IJb-g8-6Og" secondAttribute="bottom" constant="17" id="iGT-Pg-vkN"/>
+                            <constraint firstItem="iB2-DG-ODV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ns6-23-OKN"/>
+                            <constraint firstItem="IJb-g8-6Og" firstAttribute="top" secondItem="okP-3e-k1G" secondAttribute="bottom" id="pyJ-x2-SZO"/>
+                            <constraint firstItem="LLr-br-vPm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xAW-b7-DUX"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="btnCreateUser" destination="QSL-T3-LsE" id="Wvr-Qm-3nX"/>
+                        <outlet property="btnLogin" destination="LLr-br-vPm" id="nJv-P0-MeY"/>
+                        <outlet property="txtPassword" destination="eUJ-aM-sH5" id="nGy-k6-AI7"/>
+                        <outlet property="txtUser" destination="iB2-DG-ODV" id="u4k-hb-1Oz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="269"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Login-Facebook-¡Conecta-mejor-a-tu-empresa-texto1.png" width="3921" height="720"/>
+        <image name="logo.png" width="1236" height="372"/>
+    </resources>
+</document>
